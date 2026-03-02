@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', system-ui, sans-serif;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffebee 100%);
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #c62828;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+.container {
+    width: 90%;
+    margin-top: 10px;
+    max-width: 1380px;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 16px 10px;
+    text-align: center;
+    border: 1px solid #ffcdd2;
+    transition: background 0.2s ease;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+th {
+    background: linear-gradient(135deg, #ef5350, #f06292);
+    color: white;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+th:first-child {
+    background: linear-gradient(135deg, #c62828, #d32f2f);
+    width: 140px;
+    font-size: 1.1rem;
+}
+
+th:not(:first-child) {
+    font-size: 0.98rem;
+    padding: 12px 6px;
+    line-height: 1.3;
+}
+
+td:first-child {
+    background: #ffebee;
+    font-weight: 600;
+    color: #c62828;
+    font-size: 1.05rem;
+    width: 140px;
+}
+
+tr:nth-child(even) td {
+    background: #fff8f8;
+}
+
+tr:hover td {
+    background: #f0d8dd !important;
+}
+
+td.subject {
+    background: #ffebee;
+    color: #b71c1c;
+    font-weight: 500;
+}
+
+td.lab {
+    background: #ffcdd2;
+    color: #b71c1c;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td:empty, td:empty::before {
+    content: "—";
+    color: #bdbdbd;
+    font-style: italic;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #757575;
+    font-size: 0.95rem;
+}

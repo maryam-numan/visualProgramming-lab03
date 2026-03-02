@@ -1,0 +1,313 @@
+:root {
+    --accent: #0ea5e9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #f4f4f5;
+    color: #27272a;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.cv-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.header {
+    background: #18181b;
+    color: white;
+    padding: 60px 60px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    font-family: 'Playfair Display', serif;
+    font-size: 62px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.title {
+    font-size: 26px;
+    color: var(--accent);
+    margin-top: 8px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-item i {
+    width: 22px;
+    color: var(--accent);
+    font-size: 18px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+}
+
+.left {
+    padding: 60px;
+    border-right: 1px solid #f1f1f1;
+}
+
+.right {
+    background: #fafafa;
+    padding: 60px;
+}
+
+.section {
+    margin-bottom: 52px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 62px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 999px;
+}
+
+.job {
+    margin-bottom: 38px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 14px;
+}
+
+.job-title {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.company {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.date {
+    background: #f4f4f5;
+    color: #52525b;
+    font-size: 13px;
+    padding: 4px 14px;
+    border-radius: 9999px;
+    white-space: nowrap;
+}
+
+.job ul {
+    padding-left: 22px;
+}
+
+.job li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #3f3f46;
+}
+
+.education {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.degree {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.school {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.year {
+    text-align: right;
+    color: #52525b;
+    font-size: 14px;
+}
+
+.note {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #52525b;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.project {
+    border-left: 4px solid var(--accent);
+    padding-left: 22px;
+}
+
+.project h4 {
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.project small {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.project p {
+    margin-top: 8px;
+    font-size: 14.5px;
+    color: #3f3f46;
+}
+
+.right .section {
+    margin-bottom: 48px;
+}
+
+.strength {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.strength-icon {
+    font-size: 32px;
+    width: 36px;
+}
+
+.strength-title {
+    font-weight: 600;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 8px 18px;
+    border-radius: 9999px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #27272a;
+}
+
+.language {
+    margin-bottom: 26px;
+}
+
+.lang-name {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.level {
+    color: var(--accent);
+}
+
+.lang-level {
+    display: flex;
+    gap: 6px;
+}
+
+.dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+
+.dot-filled {
+    background: var(--accent);
+}
+
+.dot-empty {
+    background: #e4e4e7;
+}
+
+.certificate {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 22px;
+}
+
+.certificate i {
+    font-size: 22px;
+    color: var(--accent);
+    margin-top: 2px;
+}
+
+.cert-date {
+    font-size: 13px;
+    color: #52525b;
+}
+
+@media (max-width: 900px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+    .left, .right {
+        padding: 50px 40px;
+    }
+    .header {
+        padding: 50px 40px;
+    }
+}
+
+@media print {
+    body {
+        padding: 0;
+        background: white;
+    }
+    .cv-container {
+        box-shadow: none;
+        border-radius: 0;
+        max-width: 100%;
+    }
+}
